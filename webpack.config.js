@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
-        filename: 'v-picker-m.js'
+        filename: 'vue-picker.js'
     },
     module: {
         rules: [
