@@ -5,6 +5,9 @@
     "author": "lvyueyang <975794403@qq.com>",
     "license": "MIT",
     "private": true,
+    "main": "dist/index.js",
+    "unpkg": "dist/index.js",
+    "module": "dist/index.js",
     "keywords": [
         "vue",
         "picker",
@@ -21,6 +24,7 @@
     "dependencies": {
         "vue": "^2.5.11"
     },
+
     "browserslist": [
         "> 1%",
         "last 2 versions",

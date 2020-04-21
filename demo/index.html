@@ -5,11 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>v-picker</title>
+    <title>vue-picker</title>
 </head>
 <body>
 <div id="app">
-    <h1 style="text-align: center;">v-picker</h1>
+    <h1 style="text-align: center;">vue-picker</h1>
     <br>
     <v-picker :options="list" v-model="checked"></v-picker>
     <br>
@@ -28,7 +28,7 @@
                     @cancel="cancel"></v-picker-modal>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-<script src="../dist/index.js"></script>
+<script src="../dist/vue-picker.js"></script>
 <script>
     let list = []
     for (let j = 1; j <= 4; j++) {
