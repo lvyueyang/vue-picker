@@ -1,4 +1,4 @@
-# v-picker-m
+# vue-picker
 
 > 适用于移动端的vue的picker组件，无依赖，轻量
 
