@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 
-let entry = './src/lib/v-picker/index.js'
+let entry = './src/picker/index.js'
 if (process.env.NODE_ENV === 'development') {
     entry = './src/main.js'
 }
@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
-        filename: 'vue-picker.js'
+        filename: 'vm-picker.js'
     },
     module: {
         rules: [

@@ -1,11 +1,11 @@
-# vue-picker
+# vm-picker
 
 > 适用于移动端的vue的picker组件，无依赖，轻量
 
 ## 安装
 
 ```sh
-npm i vue-picker --save
+npm i vm-picker --save
 ```
 
 ## 引入插件
@@ -14,7 +14,7 @@ npm i vue-picker --save
 
 ``` js
 import Vue from 'vue'
-import VPicker from 'vue-picker'
+import VPicker from 'vm-picker'
 
 Vue.use(VPicker)
 ```
@@ -22,7 +22,7 @@ Vue.use(VPicker)
 ### 局部引入
 
 ```js
-import {VPicker, VPickerModal} from 'vue-picker'
+import {VPicker, VPickerModal} from 'vm-picker'
 ```
 
 ## 基本用法
@@ -122,7 +122,8 @@ const picker = this.$picker({
 | 名称    | 说明                  | 类型   |
 | ------- | --------------------- | ------ |
 | index   | 对应options中列的下标 | Number |
-| options | 要被替换的值          |        |
+| options | 要被替换的值          | Array  |
+
 
 ```js
 picker.setOptions(0, [{

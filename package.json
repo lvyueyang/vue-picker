@@ -1,17 +1,20 @@
 {
-    "name": "vue-picker",
+    "name": "vm-picker",
     "description": "vue的picker组件，无依赖，轻量",
-    "version": "1.0.0",
-    "author": "lvyueyang <975794403@qq.com>",
+    "version": "1.0.1",
+    "author": "975794403@qq.com",
     "license": "MIT",
     "private": false,
-    "main": "dist/vue-picker.js",
-    "unpkg": "dist/vue-picker.min.js",
-    "module": "dist/vue-picker.esm.js",
+    "main": "dist/vm-picker.js",
+    "unpkg": "dist/vm-picker.min.js",
+    "module": "dist/vm-picker.esm.js",
     "keywords": [
         "vue",
         "picker",
-        "vue-picker"
+        "vm-picker",
+        "vue-picker",
+        "选择器",
+        "移动端选择器"
     ],
     "repository": {
         "type": "git",
@@ -24,7 +27,6 @@
     "dependencies": {
         "vue": "^2.5.11"
     },
-
     "browserslist": [
         "> 1%",
         "last 2 versions",

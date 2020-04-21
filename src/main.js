@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VPicker from './lib/v-picker'
+import VPicker from './picker'
 
 Vue.use(VPicker)
 new Vue({
