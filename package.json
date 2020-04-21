@@ -1,13 +1,13 @@
 {
-    "name": "vue-picker",
+    "name": "v-picker-m",
     "description": "vue的picker组件，无依赖，轻量",
     "version": "1.0.0",
     "author": "lvyueyang <975794403@qq.com>",
     "license": "MIT",
     "private": true,
-    "main": "dist/index.js",
-    "unpkg": "dist/index.js",
-    "module": "dist/index.js",
+    "main": "dist/v-picker-m.js",
+    "unpkg": "dist/v-picker-m.min.js",
+    "module": "dist/v-picker-m.esm.js",
     "keywords": [
         "vue",
         "picker",

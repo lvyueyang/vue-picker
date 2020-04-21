@@ -1,11 +1,11 @@
-# v-picker
+# v-picker-m
 
-> vue的picker组件，无依赖，轻量
+> 适用于移动端的vue的picker组件，无依赖，轻量
 
 ## 安装
 
 ```sh
-npm i v-picker --save
+npm i v-picker-m --save
 ```
 
 ## 引入插件
@@ -14,7 +14,7 @@ npm i v-picker --save
 
 ``` js
 import Vue from 'vue'
-import VPicker from 'v-picker'
+import VPicker from 'v-picker-m'
 
 Vue.use(VPicker)
 ```
@@ -22,7 +22,7 @@ Vue.use(VPicker)
 ### 局部引入
 
 ```js
-import {VPicker, VPickerModal} from 'v-picker'
+import {VPicker, VPickerModal} from 'v-picker-m'
 ```
 
 ## 基本用法
