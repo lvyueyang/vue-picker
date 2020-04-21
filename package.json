@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "author": "lvyueyang <975794403@qq.com>",
     "license": "MIT",
-    "private": true,
+    "private": false,
     "main": "dist/vue-picker.js",
     "unpkg": "dist/vue-picker.min.js",
     "module": "dist/vue-picker.esm.js",
