@@ -5,7 +5,7 @@
 ## 安装
 
 ```sh
-npm i v-picker-m --save
+npm i vue-picker --save
 ```
 
 ## 引入插件
@@ -14,7 +14,7 @@ npm i v-picker-m --save
 
 ``` js
 import Vue from 'vue'
-import VPicker from 'v-picker-m'
+import VPicker from 'vue-picker'
 
 Vue.use(VPicker)
 ```
@@ -22,7 +22,7 @@ Vue.use(VPicker)
 ### 局部引入
 
 ```js
-import {VPicker, VPickerModal} from 'v-picker-m'
+import {VPicker, VPickerModal} from 'vue-picker'
 ```
 
 ## 基本用法
