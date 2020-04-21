@@ -5,7 +5,7 @@
 ## 安装
 
 ```sh
-npm i v-picker -save
+npm i v-picker --save
 ```
 
 ## 引入插件
