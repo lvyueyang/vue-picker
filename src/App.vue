@@ -19,7 +19,7 @@
 
 <script>
     let list = []
-    for (let j = 1; j <= 4; j++) {
+    for (let j = 1; j <= 3; j++) {
         const arr = []
         for (let i = 1; i < 5; i++) {
             arr.push({

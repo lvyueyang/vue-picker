@@ -1,44 +1,10 @@
-<style lang="scss">
-    .v-picker-list-wrap {
-        position: relative;
-        height: 220px;
-        width: 100%;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-
-        &:after, &:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            z-index: 2;
-            pointer-events: none;
-            backface-visibility: hidden;
-        }
-
-        &:before {
-            top: 0;
-            bottom: 132px;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.3));
-            border-bottom: 1px solid #ccc;
-        }
-
-        &:after {
-            top: 132px;
-            bottom: 0;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.75));
-            border-top: 1px solid #ccc;
-        }
-    }
-</style>
 <template>
     <div class="v-picker-list-wrap">
-        <list v-for="(list,index) in options"
-              :list="list"
-              :key="index"
-              :checked="checked[index]"
-              @change="listChange($event,index)"></list>
+        <div v-for="(list,index) in options" :key="index" class="v-picker-column-item">
+            <list :list="list"
+                  :checked="checked[index]"
+                  @change="listChange($event,index)"></list>
+        </div>
     </div>
 </template>
 
@@ -60,7 +26,7 @@
                 default() {
                     return []
                 }
-            }
+            },
         },
         computed: {
             checked() {
@@ -126,3 +92,54 @@
     }
 </script>
 
+<style lang="scss">
+    .v-picker-list-wrap {
+        position: relative;
+        height: 220px;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+
+        &:after, &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            pointer-events: none;
+            backface-visibility: hidden;
+        }
+
+        &:before {
+            top: 0;
+            bottom: 132px;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.3));
+            border-bottom: 1px solid #ccc;
+        }
+
+        &:after {
+            top: 132px;
+            bottom: 0;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.75));
+            border-top: 1px solid #ccc;
+        }
+
+        .v-picker-column-item {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            color: #333;
+            font-size: 14px;
+            line-height: 1;
+
+            .v-picker-column-append {
+                height: 100%;
+                padding: 0 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+</style>

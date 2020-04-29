@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 
-let entry = './src/picker/index.js'
+let entry = './src/lib/index.js'
 if (process.env.NODE_ENV === 'development') {
     entry = './src/main.js'
 }
@@ -10,7 +10,10 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
-        filename: 'vm-picker.js'
+        filename: 'vm-picker.js',
+        library: 'vm-picker',
+        libraryTarget: 'umd',
+        umdNamedDefine: true
     },
     module: {
         rules: [
